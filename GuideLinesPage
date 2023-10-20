@@ -1,0 +1,17 @@
+1. nainstalovat daisyUI + react icons + tailwind + json server
+2. udelat si layout kde budu mit pod ToDoList table ktery my bude zobrazovat tasks a pod tim bude button ktery bude pridavat novy tasks
+3. rozjedu si JSON server ktery bude fungovt jako API ze ktereho budu tahat a prepisovat svoje todos
+4. v moji app file si vytvorim slozku data ve ktere si vytvorim todos.json file ve ktere si vytvorim nejaka prvotni data ktere musi obsahovat nejkou "id" a "text"
+5. v package.json do "scripts musim pridat "json-server": "json-server --watch data/todos.json --port 3001" diky kteremu to cele propojim a nnovy servcer rozjedu na 3001 portu
+
+6. v moji app si vytvorim slozku types ve ktere se vytvorim tasks.ts file ve ktere si urcime jakou strukturu budou mit nase data
+7. v moji app potom vytvorim file api.ts kde si jako prvni vytvorim get function ktera me bude tahat vsechny todos z databaze , tuhle funkci si zavolam v page.tsx kde si vyzkousim jestli to funguje
+8. Vytvorim si componentu TaskList kde si stahnu z daisyUI table do ktereho budu posilat z page.tsx ty tasks ktere budu tahat z API a vymapovat si je to tablu
+9. vytvorim si componentu Task.tsx kde budu mapovat vsema task a pak je budu posilat do page.tsx, nesmim si zapomenout udelat TS a pomoci props posilam
+
+10. Tedka budeme vytvaret modal ktery se objevi kdyz kliknu na 'Add New Task' button
+- stahneme si z DaisyUI modal a ktery rendernu do AddTask.tsx kde si taky vytvorim useState() diky kteremu budu zobrazovat/zavirat ten modal
+
+11. vytvorim si Modal component ve kterym budu mit children ktere budu doplnovat z AddTask.tsx
+12. v AddTask.tsx si vytvorim submitHandler ktery me bude zachytavat a ukladat to co mam v inputu.
+
